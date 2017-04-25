@@ -4289,7 +4289,23 @@ if (errors.length) {
     file.addErrorForConcatenation(token, errors, &#x27;Attribute concatenation must not be used&#x27;, _this._aggressive);
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4372,7 +4388,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4449,7 +4481,23 @@ if (errors.length) {
     file.addErrorForTemplateString(token, errors, &#x27;Attribute template string must not be used&#x27;, this._all);
   }.bind(this));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4522,7 +4570,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllTokensByType(&#x27;:&#x27;, errors, &#x27;Block expansion operators must not be used&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4595,7 +4659,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllStaticAttributeValues(&#x27;class&#x27;, errors, &#x27;Static attribute &#x22;class&#x22; must be written as class literal&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4668,7 +4748,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllTokensByType(&#x27;class&#x27;, errors, &#x27;Class literals must not be used&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4742,7 +4838,23 @@ if (errors.length) {
   file.addErrorForIncorrectTokenTypeOrder(&#x27;start-attributes&#x27;, &#x27;class&#x27;, utils.htmlTagBoundaryTypes, errors, &#x27;All class literals must
  be written after any attribute blocks&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4818,7 +4930,23 @@ if (errors.length) {
   file.addErrorForIncorrectTokenTypeOrder(&#x27;id&#x27;, &#x27;class&#x27;, utils.htmlTagBoundaryTypes, errors, &#x27;All class literals must be written
  after any ID literals&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -4932,7 +5060,23 @@ if (errors.length) {
     });
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5007,7 +5151,23 @@ if (errors.length) {
     return token.type === &#x27;text-html&#x27; || (token.type === &#x27;text&#x27; &#x26;&#x26; /&#x3c;[^\n]*/.test(token.val));
   }, errors, &#x27;HTML text must not be used&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5080,7 +5240,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllStaticAttributeValues(&#x27;id&#x27;, errors, &#x27;Static attribute &#x22;id&#x22; must be written as ID literal&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5153,7 +5329,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllTokensByType(&#x27;id&#x27;, errors, &#x27;ID literals must not be used&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5227,7 +5419,23 @@ if (errors.length) {
   file.addErrorForIncorrectTokenTypeOrder(&#x27;start-attributes&#x27;, &#x27;id&#x27;, utils.htmlTagBoundaryTypes, errors, &#x27;All ID literals must be
  written after any attribute blocks&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5304,7 +5512,23 @@ if (errors.length) {
     return token.type === &#x27;mixin&#x27; &#x26;&#x26; file.getNextToken(token).type !== &#x27;indent&#x27;;
   }, errors, &#x27;Old mixin call syntax is not allowed&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5389,7 +5613,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5462,7 +5702,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForCodeOperator(this._codeOperatorTypes, false, errors);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5547,7 +5803,23 @@ if (errors.length) {
     description: &#x27;closing bracket&#x27;
   }, errors);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5655,7 +5927,23 @@ if (errors.length) {
     });
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5743,7 +6031,23 @@ if (errors.length) {
     errors.add(&#x27;Tag &#x22;&#x27; + token.val + &#x27;&#x22; must not be used&#x27;, token.line, token.col);
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5824,7 +6128,23 @@ if (errors.length) {
     file.addErrorForConcatenation(token, errors, &#x27;String concatenation must not be used&#x27;, _this._aggressive);
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5897,7 +6217,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllTokensByType(&#x27;interpolated-code&#x27;, errors, &#x27;String interpolation operators must not be used&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -5970,7 +6306,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForAllTokensByType(&#x27;start-pug-interpolation&#x27;, errors, &#x27;Tag interpolation operators must not be used&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -6049,7 +6401,23 @@ if (errors.length) {
     file.addErrorForTemplateString(token, errors, &#x27;Template string must not be used&#x27;, this._all);
   }.bind(this));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -6131,7 +6499,23 @@ addErrorForAllTokensByFilter: function (filter, errors, message) {
     <li>description and source-code<pre class="apidocCodePre">addParseError = function (error) {
   this._errors.push(error);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+
+  _checkFile: function (file) {
+var errors = new Errors(file);
+var firstToken;
+
+file.getParseErrors().forEach(function (parseError) {
+  errors.<span class="apidocCodeKeywordSpan">addParseError</span>(parseError);
+});
+
+firstToken = file.getFirstToken();
+
+if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+  return errors.getErrors();
+}
+...</pre></li>
     </ul>
 
 
@@ -6146,7 +6530,23 @@ addErrorForAllTokensByFilter: function (filter, errors, message) {
     <li>description and source-code<pre class="apidocCodePre">getErrors = function () {
   return this._errors;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+file.getParseErrors().forEach(function (parseError) {
+  errors.addParseError(parseError);
+});
+
+firstToken = file.getFirstToken();
+
+if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+  return errors.<span class="apidocCodeKeywordSpan">getErrors</span>();
+}
+
+this.getConfiguredRules().forEach(function (rule) {
+  errors.setCurrentRule(rule.name);
+
+  rule.lint(file, errors);
+});
+...</pre></li>
     </ul>
 
 
@@ -6161,7 +6561,22 @@ addErrorForAllTokensByFilter: function (filter, errors, message) {
     <li>description and source-code<pre class="apidocCodePre">setCurrentRule = function (rule) {
   this._currentRule = &#x27;LINT_&#x27; + rule.toUpperCase();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  firstToken = file.getFirstToken();
+
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.<span class="apidocCodeKeywordSpan">setCurrentRule</span>(rule.name);
+
+    rule.lint(file, errors);
+  });
+
+  return errors.getErrors();
+},
+...</pre></li>
     </ul>
 
 
@@ -6236,7 +6651,23 @@ if (errors.length) {
     errors.add(&#x27;File must be at most &#x27; + this._maximumNumberOfLines + &#x27; lines long&#x27;, lastToken.line);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -6873,7 +7304,23 @@ addParseError: function (error) {
     <li>description and source-code<pre class="apidocCodePre">getFirstToken = function () {
   return this.getToken(0);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var errors = new Errors(file);
+var firstToken;
+
+file.getParseErrors().forEach(function (parseError) {
+  errors.addParseError(parseError);
+});
+
+firstToken = file.<span class="apidocCodeKeywordSpan">getFirstToken</span>();
+
+if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+  return errors.getErrors();
+}
+
+this.getConfiguredRules().forEach(function (rule) {
+  errors.setCurrentRule(rule.name);
+...</pre></li>
     </ul>
 
 
@@ -7127,7 +7574,23 @@ _this.iterateTokensByFilter(function (token) {
     <li>description and source-code<pre class="apidocCodePre">getParseErrors = function () {
   return this._parseErrors;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return this._configuredRules;
+  },
+
+  _checkFile: function (file) {
+var errors = new Errors(file);
+var firstToken;
+
+file.<span class="apidocCodeKeywordSpan">getParseErrors</span>().forEach(function (parseError) {
+  errors.addParseError(parseError);
+});
+
+firstToken = file.getFirstToken();
+
+if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+  return errors.getErrors();
+...</pre></li>
     </ul>
 
 
@@ -7482,7 +7945,23 @@ if (errors.length) {
   file.addErrorForIncorrectTokenTypeOrder(&#x27;class&#x27;, &#x27;start-attributes&#x27;, utils.htmlTagBoundaryTypes, errors, &#x27;All class literals must
  be written before any attribute blocks&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -7558,7 +8037,23 @@ if (errors.length) {
   file.addErrorForIncorrectTokenTypeOrder(&#x27;class&#x27;, &#x27;id&#x27;, utils.htmlTagBoundaryTypes, errors, &#x27;All class literals must be written
  before any ID literals&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -7634,7 +8129,23 @@ if (errors.length) {
   file.addErrorForIncorrectTokenTypeOrder(&#x27;id&#x27;, &#x27;start-attributes&#x27;, utils.htmlTagBoundaryTypes, errors, &#x27;All ID literals must be
  written before any attribute blocks&#x27;);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -7722,7 +8233,23 @@ if (errors.length) {
     errors.add(&#x27;Missing line feed at file end&#x27;, file.getLines().length);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -7807,7 +8334,23 @@ if (errors.length) {
     });
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -7890,7 +8433,23 @@ if (errors.length) {
     }, errors, &#x27;All tags must be written in lower case&#x27;);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -7963,7 +8522,23 @@ if (errors.length) {
     <li>description and source-code<pre class="apidocCodePre">lint = function (file, errors) {
   file.addErrorForCodeOperator(this._codeOperatorTypes, true, errors);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8048,7 +8623,23 @@ if (errors.length) {
     description: &#x27;closing bracket&#x27;
   }, errors);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8181,7 +8772,23 @@ if (errors.length) {
     });
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8271,7 +8878,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8373,7 +8996,23 @@ function isString(node) {
 
   return name;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (isAbsolutePath(filePath) || !/\w|@/.test(filePath.charAt(0))) {
+  filePath = path.resolve(this._basePath, filePath);
+
+  if (!fs.existsSync(filePath)) {
+    throw new Error(&#x27;Cannot find configuration file &#x22;&#x27; + filePath + &#x27;&#x22; to extend&#x27;);
+  }
+} else {
+  var packageName = utils.<span class="apidocCodeKeywordSpan">normalizePackageName</span>(filePath, &#x27;pug-lint-config&#x27;);
+
+  try {
+    filePath = resolve.sync(packageName);
+  } catch (err) {
+    throw new Error(&#x27;Cannot find module &#x22;&#x27; + packageName + &#x27;&#x22; to extend&#x27;);
+  }
+}
+...</pre></li>
     </ul>
 
 
@@ -8444,20 +9083,21 @@ values.forEach(function (value) {
   return options;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-          enum: [&#x27;-&#x27;, &#x27;=&#x27;, &#x27;!=&#x27;]
-        }
-      }
-    ]
-  },
+  enum: [null, true]
+},
 
-  configure: function (options) {
-    this._codeOperatorTypes = utils.<span class="apidocCodeKeywordSpan">validateCodeOperatorOptions</span>(this.name, options);
-  },
+configure: function (options) {
+&#x3c;% if (optionsType === &#x27;true&#x27;) { -%&#x3e;
+  utils.validateTrueOptions(this.name, options);
+&#x3c;% } else if (optionsType === &#x27;true|codeSep&#x27;){ -%&#x3e;
+  utils.<span class="apidocCodeKeywordSpan">validateCodeOperatorOptions</span>(this.name, options);
+&#x3c;% } else { -%&#x3e;
+  // reminder: possible options: &#x3c;%- options.join(&#x27;|&#x27;) %&#x3e;
+  assert(..., this.name + &#x27; option requires ...&#x27;);
+&#x3c;% } -%&#x3e;
+},
 
-  lint: function (file, errors) {
-    file.addErrorForCodeOperator(this._codeOperatorTypes, false, errors);
-  }
-};
+lint: function (file, errors) {
 ...</pre></li>
     </ul>
 
@@ -8474,21 +9114,21 @@ values.forEach(function (value) {
   assert(options === true, name + &#x27; option requires a true value or should be removed&#x27;);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-name: &#x27;disallowAttributeInterpolation&#x27;,
 
 schema: {
   enum: [null, true]
 },
 
 configure: function (options) {
+&#x3c;% if (optionsType === &#x27;true&#x27;) { -%&#x3e;
   utils.<span class="apidocCodeKeywordSpan">validateTrueOptions</span>(this.name, options);
+&#x3c;% } else if (optionsType === &#x27;true|codeSep&#x27;){ -%&#x3e;
+  utils.validateCodeOperatorOptions(this.name, options);
+&#x3c;% } else { -%&#x3e;
+  // reminder: possible options: &#x3c;%- options.join(&#x27;|&#x27;) %&#x3e;
+  assert(..., this.name + &#x27; option requires ...&#x27;);
+&#x3c;% } -%&#x3e;
 },
-
-lint: function (file, errors) {
-  file.iterateTokensByType(&#x27;attribute&#x27;, function (token) {
-    var result = /(\\)?#\{.+\}/.exec(token.val);
-    if (result &#x26;&#x26; !result[1]) {
-      var startLocation = file.findStartLocation(token.val, token, file.getNextToken(token));
 ...</pre></li>
     </ul>
 
@@ -8587,7 +9227,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8748,7 +9404,23 @@ if (errors.length) {
     return literal.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, &#x27;\\$&#x26;&#x27;);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8848,7 +9520,23 @@ if (errors.length) {
     });
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -8943,7 +9631,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -9036,7 +9740,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -9129,7 +9849,23 @@ if (errors.length) {
     return lineBreak;
   }, this);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -9216,7 +9952,23 @@ if (errors.length) {
     });
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
@@ -9355,7 +10107,23 @@ if (errors.length) {
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!firstToken || firstToken &#x26;&#x26; firstToken.type === &#x27;eos&#x27;) {
+    return errors.getErrors();
+  }
+
+  this.getConfiguredRules().forEach(function (rule) {
+    errors.setCurrentRule(rule.name);
+
+    rule.<span class="apidocCodeKeywordSpan">lint</span>(file, errors);
+  });
+
+  return errors.getErrors();
+},
+
+_createFile: function (filename, source) {
+  return new File(filename, source);
+...</pre></li>
     </ul>
 
 
