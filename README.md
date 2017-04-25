@@ -1,6 +1,6 @@
 # npmdoc-pug-lint
 
-#### api documentation for  [pug-lint (v2.4.0)](https://github.com/pugjs/pug-lint)  [![npm package](https://img.shields.io/npm/v/npmdoc-pug-lint.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-pug-lint) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-pug-lint.svg)](https://travis-ci.org/npmdoc/node-npmdoc-pug-lint)
+#### basic api documentation for  [pug-lint (v2.4.0)](https://github.com/pugjs/pug-lint)  [![npm package](https://img.shields.io/npm/v/npmdoc-pug-lint.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-pug-lint) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-pug-lint.svg)](https://travis-ci.org/npmdoc/node-npmdoc-pug-lint)
 
 #### An unopinionated and configurable linter and style checker for Pug (formerly Jade)
 
